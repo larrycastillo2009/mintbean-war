@@ -1,7 +1,10 @@
 ---
 title: Game
-layout: game
-filename: game.html
+layout: template
+filename: GAME.md
 --- 
-
-<p> this is displaying content for the game page </p>
+<div class="computer-deck deck"></div>
+<div class="computer-card-slot card-slot"></div>
+<div class="text"></div>
+<div class="player-deck deck"></div>
+<div class="player-card-slot card-slot"></div>
