@@ -5,5 +5,5 @@ filename: index.md
 --- 
 <p> new does this appear on the screen<p>
 
-<a href={{page.game}}>Start Game</a>
+<a href=game>Start Game</a>
 
