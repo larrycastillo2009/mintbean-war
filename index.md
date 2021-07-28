@@ -3,5 +3,5 @@ title: Home
 layout: template
 --- 
 <p> does this appear on the screen<p>
-<a href=game.html>Start Game</a>
+<a href=game>Start Game</a>
 
