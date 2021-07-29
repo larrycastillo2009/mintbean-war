@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "vg";
+    src: url("../vg5000-master/fonts/VG5000-Regular.otf");
+}
+
+@font-face {
+    font-family: "combat";
+    src: url("../Combat-master/font/Combat.otf");
+}
+
+@keyframes backgroundColorPalette {
+    0% {
+        background: #ee6055;
+    }
+    25% {
+        background: #60d394;
+    }
+    50% {
+        background: #aaf683;
+    }
+    75% {
+        background: #ffd97d;
+    }
+    100% {
+        background: #ff9b85;
+    }
+}
+
+.animate__animated.animate__fadeIn{
+    --animate-duration: 4s
+}
+
+.btn-xlarge {
+    padding: 18px 28px;
+    font-size: 3rem; //change this to your desired size
+line-height: normal;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+
+.landing {
+    font-family: "vg",sans-serif;
+    height: 50vw;
+    width: 100vw;
+
+    animation-name: backgroundColorPalette;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.instructions{
+    font-family: "vg";
+    font-size: 1.25em;
+    background-color: black;
+    color: white;
+    height: 50vw;
+    width: 100vw;
+}
+
+.format{
+    padding: 4em
+}
+
+.aboutme {
+    font-family: "vg";
+    font-size: 1.25em;
+    background-color: #60d394;
+    height: 50vw;
+    width: 100vw;
+}
+
+.title {
+    font-family: "combat";
+    font-size: 28em;
+
+}
+.subtitle{
+    font-size: 4em;
+    word-spacing: 15px;
+}
+
+
+.buttonbox{}
+
+body {
+    opacity: 0;
+    transition: opacity .5s;
+}

@@ -2,39 +2,6 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: "vg";
-    src: url("../vg5000-master/fonts/VG5000-Regular.otf");
-}
-
-@font-face {
-    font-family: "combat";
-    src: url("../Combat-master/font/Combat.otf");
-}
-
-@keyframes backgroundColorPalette {
-    0% {
-        background: #ee6055;
-    }
-    25% {
-        background: #60d394;
-    }
-    50% {
-        background: #aaf683;
-    }
-    75% {
-        background: #ffd97d;
-    }
-    100% {
-        background: #ff9b85;
-    }
-}
-
-.animate__animated.animate__fadeIn{
-    --animate-duration: 4s
-}
-
-
 /*body {*/
 /*    margin: 0;*/
 /*    display: grid;*/
@@ -46,44 +13,6 @@
 /*    padding-top: 1rem;*/
 /*}*/
 
-.landing {
-    font-family: "vg",sans-serif;
-    height: 50vw;
-    width: 100vw;
-
-    animation-name: backgroundColorPalette;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-.instructions{
-    font-family: "vg";
-    background-color: black;
-    color: white;
-    height: 50vw;
-    width: 100vw;
-}
-
-.aboutme {
-    background-color: #60d394;
-    height: 50vw;
-    width: 100vw;
-}
-
-.title {
-    font-family: "combat";
-    font-size: 28em;
-
-}
-.subtitle{
-    font-size: 4em;
-    word-spacing: 15px;
-}
-
-
-.buttonbox{
-}
 
 .deck {
     height: 100%;
