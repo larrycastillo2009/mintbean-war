@@ -58,7 +58,9 @@
 }
 
 .instructions{
+    font-family: "vg";
     background-color: black;
+    color: white;
     height: 50vw;
     width: 100vw;
 }

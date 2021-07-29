@@ -90,25 +90,5 @@
 
 
 
-/* This bit is just to look pretty. Not relevant to the implementation */
 
-body {
-    font-size: 1.2em;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.4;
-    color: #D7EEEC;
-}
-a {
-    color: #004d40;
-    font-weight: bold;
-}
-
-.wrap {
-    margin: 48px auto;
-    max-width: 580px;
-    text-align: justify;
-}
-h1, h2 {
-    font-weight: lighter;
-}
 
