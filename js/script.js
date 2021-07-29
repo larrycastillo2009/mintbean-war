@@ -1,4 +1,4 @@
-import Deck from "./deck.js"
+// import Deck from "./deck.js"
 
 const CARD_VALUE_MAP = {
     "2": 2,
@@ -30,17 +30,34 @@ document.addEventListener("click", () => {
         return
     }
 
-    if (inRound) {
-        cleanBeforeRound()
-    } else {
-        flipCards()
-    }
+    // if (inRound) {
+    //     cleanBeforeRound()
+    // } else {
+    //     flipCards()
+    // }
 })
 
 startGame()
 function startGame() {
-    const deck = new Deck()
-    deck.shuffle()
+    var deck = Deck();
+    var $container = document.getElementById('container')
+    var $container2 = document.getElementById('container2')
+
+    deck.mount($container)
+
+    deck.shuffle();
+
+    var cardBucket=[];
+    for(var i=0;i<26;i++){
+        cardBucket.push(deck.cards[i])
+    }
+
+
+    for(var i = 0; i < 26; i++){
+        cardBucket[i].mount($container2)
+    }
+    // card.mount($container2)
+
 
     const deckMidpoint = Math.ceil(deck.numberOfCards / 2)
     playerDeck = new Deck(deck.cards.slice(0, deckMidpoint))
@@ -51,14 +68,14 @@ function startGame() {
     cleanBeforeRound()
 }
 
-function cleanBeforeRound() {
-    inRound = false
-    computerCardSlot.innerHTML = ""
-    playerCardSlot.innerHTML = ""
-    text.innerText = ""
-
-    updateDeckCount()
-}
+// function cleanBeforeRound() {
+//     inRound = false
+//     computerCardSlot.innerHTML = ""
+//     playerCardSlot.innerHTML = ""
+//     text.innerText = ""
+//
+//     updateDeckCount()
+// }
 
 function flipCards() {
     inRound = true
