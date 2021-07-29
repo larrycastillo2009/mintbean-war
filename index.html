@@ -8,20 +8,19 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<div class="landing">
-    <h3 class="subtitle text-center animate__animated animate__bounceInLeft">It's All Out</h3>
+<div id="content-area" class="landing">
     <h1 class="title text-center fw-bold animate__animated animate__fadeIn">WAR</h1>
-    <h3 class="subtitle2 text-center animate__animated animate__bounceInRight ">The Classic Card Game</h3>
+    <h3 class="subtitle text-center mb-5 animate__animated animate__bounceInRight ">The Classic Card Game</h3>
     <div class="text-center buttonbox">
-    <a class="btn btn-primary mr-2" href="game.html">Start Game</a>
-    <button type="button" onclick="document.getElementById('middle').scrollIntoView();" class="btn btn-primary mr-2" id="instructions">Instructions</button>
-    <button type="button" onclick="document.getElementById('last').scrollIntoView();" class="btn btn-primary mr-2" id="aboutme">About Me</button>
+    <a class="btn btn-primary" href="game.html">Start Game</a>
+    <button type="button" onclick="document.getElementById('middle').scrollIntoView();" class="btn btn-primary" id="instructions">Instructions</button>
+    <button type="button" onclick="document.getElementById('last').scrollIntoView();" class="btn btn-primary" id="aboutme">About Me</button>
     </div>
 </div>
-<div id="middle" class="instructions">INSTRUCTIONS</div>
+<div id="content-2" class="instructions">INSTRUCTIONS</div>
 <div id="last" class="aboutme">ABOUT ME</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
