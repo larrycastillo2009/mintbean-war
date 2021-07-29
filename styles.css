@@ -2,15 +2,86 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 4rem);
-    grid-template-rows: 7rem 2rem 7rem;
-    gap: .5rem;
-    cursor: pointer;
-    justify-content: center;
-    padding-top: 1rem;
+@font-face {
+    font-family: "gulax";
+    src: url("Gulax-master/fonts/otf/Gulax-Regular.otf");
+}
+
+@font-face {
+    font-family: "combat";
+    src: url("Combat-master/font/Combat.otf");
+}
+
+@keyframes backgroundColorPalette {
+    0% {
+        background: #ee6055;
+    }
+    25% {
+        background: #60d394;
+    }
+    50% {
+        background: #aaf683;
+    }
+    75% {
+        background: #ffd97d;
+    }
+    100% {
+        background: #ff9b85;
+    }
+}
+
+.animate__animated.animate__fadeIn{
+    --animate-duration: 4s
+}
+
+
+/*body {*/
+/*    margin: 0;*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(2, 4rem);*/
+/*    grid-template-rows: 7rem 2rem 7rem;*/
+/*    gap: .5rem;*/
+/*    cursor: pointer;*/
+/*    justify-content: center;*/
+/*    padding-top: 1rem;*/
+/*}*/
+
+.landing {
+    font-family: "gulax",sans-serif;
+    height: 50vw;
+    width: 100vw;
+
+    animation-name: backgroundColorPalette;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.instructions{
+    height: 50vw;
+    width: 100vw;
+}
+
+.aboutme {
+    height: 50vw;
+    width: 100vw;
+}
+
+.title {
+    font-family: "combat";
+    font-size: 28em;
+
+}
+.subtitle{
+    font-size: 4em;
+    word-spacing: 50px;
+}
+.subtitle2{
+    font-size: 3em;
+    word-spacing: 25px;
+}
+
+.buttonbox{
 }
 
 .deck {
