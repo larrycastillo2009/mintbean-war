@@ -140,10 +140,10 @@ body {
 }
 
 .btn-xlarge {
-    padding: 18px 28px;
+    padding: 1rem 2rem;
     font-size: 3rem;
 line-height: normal;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    border-radius: .5rem;
 }
