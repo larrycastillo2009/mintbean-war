@@ -5,9 +5,9 @@
 body {
     background-color: #45a173;
     margin: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 4rem);
-    grid-template-rows: 7rem 2rem 7rem;
+    /*display: grid;*/
+    /*grid-template-columns: repeat(2, 4rem);*/
+    /*grid-template-rows: 7rem 2rem 7rem;*/
     gap: .5rem;
     cursor: pointer;
     justify-content: center;
@@ -16,8 +16,10 @@ body {
 
 
 .deck {
-    height: 100%;
-    width: 100%;
+    background-image: url("../playing-card-back.jpeg");
+    background-size: contain;
+    height: 40vh;
+    width: 15vw;
     border: 1px solid black;
     display: flex;
     justify-content: center;
@@ -45,8 +47,8 @@ body {
 
 .card {
     position: relative;
-    height: 100%;
-    width: 100%;
+    height: 40vh;
+    width: 15vw;
     border: 1px solid black;
     border-radius: .5rem;
     display: flex;
