@@ -73,15 +73,15 @@ function flipCards() {
     updateDeckCount()
 
     if (isRoundWinner(playerCard, computerCard)) {
-        text.innerText = "Win"
+        text.innerHTML = "<h1 class='animate__animated animate__heartBeat'>WIN</h1>";
         playerDeck.push(playerCard)
         playerDeck.push(computerCard)
     } else if (isRoundWinner(computerCard, playerCard)) {
-        text.innerText = "Lose"
+        text.innerHTML = "<h1 class='animate__animated animate__shakeX'>LOSE</h1>";
         computerDeck.push(playerCard)
         computerDeck.push(computerCard)
     } else {
-        text.innerText = "Draw"
+        text.innerHTML = "<h1 class='animate__animated animate__flash'>DRAW</h1>";
         playerDeck.push(playerCard)
         computerDeck.push(computerCard)
     }

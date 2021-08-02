@@ -37,12 +37,13 @@ body {
 
 .counterbox{
     padding: 2em;
+    color: #ae0700;
     font-size: 1.5em;
-;
+
 }
 
 .format{
-    font-family: "vg",sans-serif;
+    font-family: "vg";
     height: 25vh;
     width: 100vw;
 }
@@ -60,6 +61,7 @@ body {
 }
 
 .surround{
+    font-family: vg, SansSerif;
     border-style: double;
     border-width: thick;
     border-spacing: 2em;
@@ -96,6 +98,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 3em;
+    color: #ae0700;
 }
 
 .card {
