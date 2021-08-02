@@ -74,6 +74,7 @@ body {
 .deck {
     background-image: url("img/playing-card-back.jpeg");
     background-size: contain;
+    background-repeat: no-repeat;
     max-height: 38vh;
     max-width: 15vw;
     border: 1px solid black;
