@@ -25,7 +25,6 @@
         background: #ff9b85;
     }
 }
-
 body {
     background-color: black;
     opacity: 0;
@@ -99,12 +98,54 @@ line-height: normal;
     max-height:75%
 }
 
-@media screen and (min-width:768px) {
-    .title {
-        font-family: "combat";
-        font-size: 18rem;
+    /*Mobile CSS*/
+    /*.title {*/
+    /*    font-family: "combat";*/
+    /*    font-size: 18rem;*/
 
-    }
-}
+    /*}*/
+
+    /*.pixsize{*/
+    /*    max-width: 50%;*/
+    /*    max-height:50%*/
+    /*}*/
+
+    /*.landing {*/
+    /*    font-family: "vg",sans-serif;*/
+
+    /*    height: 50vh;*/
+    /*    width: 100%;*/
+
+    /*    animation-name: backgroundColorPalette;*/
+    /*    animation-duration: 7s;*/
+    /*    animation-iteration-count: infinite;*/
+    /*    animation-direction: alternate;*/
+    /*}*/
+
+    /*.instructions{*/
+    /*    font-family: "vg";*/
+    /*    font-size: 1.25em;*/
+
+    /*    background-color: black;*/
+    /*    color: white;*/
+
+    /*    height: 50vh;*/
+    /*    width: 100%;*/
+    /*}*/
+
+    /*.aboutme {*/
+    /*    font-family: "vg";*/
+    /*    font-size: 1.25em;*/
+
+    /*    background-color: #60d394;*/
+
+    /*    height: 50vh;*/
+    /*    width: 100%;*/
+    /*}*/
+
+    /*.format{*/
+    /*    padding: 1em*/
+    /*}*/
+
 
 
