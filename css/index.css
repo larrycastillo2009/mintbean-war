@@ -49,6 +49,7 @@ line-height: normal;
 
 .landing {
     font-family: "vg",sans-serif;
+
     height: 100vh;
     width: 100%;
 
@@ -61,8 +62,10 @@ line-height: normal;
 .instructions{
     font-family: "vg";
     font-size: 1.25em;
+
     background-color: black;
     color: white;
+
     height: 100vh;
     width: 100%;
 }
@@ -74,7 +77,9 @@ line-height: normal;
 .aboutme {
     font-family: "vg";
     font-size: 1.25em;
+
     background-color: #60d394;
+
     height: 100vh;
     width: 100%;
 }
