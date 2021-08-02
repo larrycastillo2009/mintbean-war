@@ -1,4 +1,4 @@
-import Deck from "./deck.js"
+// import flip from "./node_modules/deck-of-cards/dist/deck"
 
 const CARD_VALUE_MAP = {
     "2": 2,
@@ -23,28 +23,49 @@ const playerDeckElement = document.querySelector(".player-deck")
 const text = document.querySelector(".text")
 
 let playerDeck, computerDeck, inRound, stop
+var deck = Deck();
+var deck2 = []
+
+for(var i=0;i<26;i++){
+    deck2.push(deck.cards[i]);
+}for(var i=0;i<26;i++){
+    deck.cards.shift(deck.cards[i]);
+}
 
 document.addEventListener("click", () => {
+
     if (stop) {
-        startGame()
+        startGame(deck,deck2)
         return
     }
 
     if (inRound) {
         cleanBeforeRound()
     } else {
-        flipCards()
+        flipCards(deck,deck2)
     }
 })
 
-startGame()
-function startGame() {
-    const deck = new Deck()
-    deck.shuffle()
+startGame(deck,deck2)
+function startGame(deck) {
+    var $container = document.getElementById('container')
+    var $container2 = document.getElementById('container2')
 
-    const deckMidpoint = Math.ceil(deck.numberOfCards / 2)
-    playerDeck = new Deck(deck.cards.slice(0, deckMidpoint))
-    computerDeck = new Deck(deck.cards.slice(deckMidpoint, deck.numberOfCards))
+    deck.mount($container)
+    deck.shuffle();
+
+    // var deck2 = []
+    //
+    // for(var i=0;i<26;i++){
+    //     deck2.push(deck.cards[i]);
+    // }
+
+    for(var i=0;i<26;i++){
+        deck2[i].mount($container2);
+    }
+    console.log(deck.cards);
+    console.log(deck2);
+
     inRound = false
     stop = false
 
@@ -60,18 +81,17 @@ function cleanBeforeRound() {
     updateDeckCount()
 }
 
-function flipCards() {
+function flipCards(deck) {
     inRound = true
+    deck.flip();
 
-    const playerCard = playerDeck.pop()
-    const computerCard = computerDeck.pop()
+    console.log(deck2[deck2.length-1])
+    console.log(deck.cards[deck.cards.length-1])
 
-    playerCardSlot.appendChild(playerCard.getHTML())
-    computerCardSlot.appendChild(computerCard.getHTML())
 
     updateDeckCount()
 
-    if (isRoundWinner(playerCard, computerCard)) {
+    if (deck2[deck2.length-1] > deck[deck.cardslength-1]) {
         text.innerText = "Win"
         playerDeck.push(playerCard)
         playerDeck.push(computerCard)
@@ -95,8 +115,8 @@ function flipCards() {
 }
 
 function updateDeckCount() {
-    computerDeckElement.innerText = computerDeck.numberOfCards
-    playerDeckElement.innerText = playerDeck.numberOfCards
+    computerDeckElement.innerText = deck.length
+    playerDeckElement.innerText = deck2.length
 }
 
 function isRoundWinner(cardOne, cardTwo) {
