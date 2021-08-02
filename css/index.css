@@ -1,11 +1,11 @@
 @font-face {
     font-family: "vg";
-    src: url("../vg5000-master/fonts/VG5000-Regular.otf");
+    src: url("vg5000-master/fonts/VG5000-Regular.otf");
 }
 
 @font-face {
     font-family: "combat";
-    src: url("../Combat-master/font/Combat.otf");
+    src: url("Combat-master/font/Combat.otf");
 }
 
 @keyframes backgroundColorPalette {

@@ -3,12 +3,12 @@
 }
 @font-face {
     font-family: "combat";
-    src: url("../Combat-master/font/Combat.otf");
+    src: url("Combat-master/font/Combat.otf");
 }
 
 @font-face {
     font-family: "vg";
-    src: url("../vg5000-master/fonts/VG5000-Regular.otf");
+    src: url("vg5000-master/fonts/VG5000-Regular.otf");
 }
 
 body {
@@ -72,7 +72,7 @@ body {
 }
 
 .deck {
-    background-image: url("../playing-card-back.jpeg");
+    background-image: url("img/playing-card-back.jpeg");
     background-size: contain;
     height: 38vh;
     width: 15vw;
