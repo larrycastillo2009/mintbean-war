@@ -18,13 +18,14 @@ const CARD_VALUE_MAP = {
 
 const computerCardSlot = document.querySelector(".computer-card-slot")
 const playerCardSlot = document.querySelector(".player-card-slot")
-const computerDeckElement = document.querySelector(".computer-deck")
-const playerDeckElement = document.querySelector(".player-deck")
+const computerDeckElement = document.querySelector(".card-count-computer")
+const playerDeckElement = document.querySelector(".card-count-player")
+const clickbox = document.querySelector(".clickbox")
 const text = document.querySelector(".text")
 
 let playerDeck, computerDeck, inRound, stop
 
-document.addEventListener("click", () => {
+clickbox.addEventListener("click", () => {
     if (stop) {
         startGame()
         return

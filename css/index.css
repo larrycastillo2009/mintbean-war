@@ -26,13 +26,20 @@
     }
 }
 
+body {
+    background-color: black;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
 .animate__animated.animate__fadeIn{
     --animate-duration: 4s
 }
 
+
 .btn-xlarge {
     padding: 18px 28px;
-    font-size: 3rem; //change this to your desired size
+    font-size: 3rem;
 line-height: normal;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -74,7 +81,7 @@ line-height: normal;
 
 .title {
     font-family: "combat";
-    font-size: 28em;
+    font-size:25em;
 
 }
 .subtitle{
@@ -83,9 +90,3 @@ line-height: normal;
 }
 
 
-.buttonbox{}
-
-body {
-    opacity: 0;
-    transition: opacity .5s;
-}

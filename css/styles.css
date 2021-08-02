@@ -1,24 +1,76 @@
 *, *::after, *::before {
     box-sizing: border-box;
 }
-
-body {
-    background-color: #45a173;
-    margin: 0;
-    /*display: grid;*/
-    /*grid-template-columns: repeat(2, 4rem);*/
-    /*grid-template-rows: 7rem 2rem 7rem;*/
-    gap: .5rem;
-    cursor: pointer;
-    justify-content: center;
-    padding-top: 1rem;
+@font-face {
+    font-family: "combat";
+    src: url("../Combat-master/font/Combat.otf");
 }
 
+@font-face {
+    font-family: "vg";
+    src: url("../vg5000-master/fonts/VG5000-Regular.otf");
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    cursor: pointer;
+    justify-content: center;
+
+}
+
+.title {
+    font-family: "combat";
+    font-size:5em;
+
+}
+
+.gametable{
+    background-color: #45a173;
+    height: 100%;
+    width: 100%;
+
+}
+.buttonbox{
+    padding: 4em
+}
+
+.counterbox{
+    padding: 2em;
+    font-size: 1.5em;
+;
+}
+
+.format{
+    font-family: "vg",sans-serif;
+    height: 25vh;
+    width: 100vw;
+}
+
+.smallformat{
+    font-family: "vg",sans-serif;
+    height: 15vh;
+    width: 100vw;
+}
+
+.bigformat{
+    font-family: "vg",sans-serif;
+    height: 45vh;
+    width: 100vw;
+}
+
+.surround{
+    border-style: double;
+    border-width: thick;
+    border-spacing: 2em;
+
+
+}
 
 .deck {
     background-image: url("../playing-card-back.jpeg");
     background-size: contain;
-    height: 40vh;
+    height: 38vh;
     width: 15vw;
     border: 1px solid black;
     display: flex;
@@ -26,7 +78,7 @@ body {
     align-items: center;
     font-size: 3rem;
     border-radius: .5rem;
-    color: white;
+    color: black;
     user-select: none;
 }
 
@@ -43,11 +95,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 3em;
 }
 
 .card {
     position: relative;
-    height: 40vh;
+    height: 38vh;
     width: 15vw;
     border: 1px solid black;
     border-radius: .5rem;
@@ -81,4 +134,13 @@ body {
     bottom: .5rem;
     right: .5rem;
     transform: rotate(180deg);
+}
+
+.btn-xlarge {
+    padding: 18px 28px;
+    font-size: 3rem;
+line-height: normal;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
 }
