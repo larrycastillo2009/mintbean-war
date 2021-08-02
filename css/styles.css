@@ -67,16 +67,16 @@ body {
     border-style: double;
     border-width: thick;
     border-spacing: 2em;
+    border-radius: 2rem;
 
 
 }
 
 .deck {
     background-image: url("img/playing-card-back.jpeg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    max-height: 38vh;
-    max-width: 15vw;
+    background-size: cover;
+    height: 38vh;
+    width: 15vw;
     border: 1px solid black;
     display: flex;
     justify-content: center;
@@ -106,8 +106,8 @@ body {
 
 .card {
     position: relative;
-    max-height: 38vh;
-    max-width: 15vw;
+    height: 38vh;
+    width: 15vw;
     border: 1px solid black;
     border-radius: .5rem;
     display: flex;
